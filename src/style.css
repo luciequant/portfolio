@@ -1,1 +1,92 @@
+:root {
+  --heading-font: "PT Serif", serif;
+  --default-font: "Outfit", sans-serif;
+}
+.hero {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgb(39, 38, 40) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(80, 79, 79) 100%
+  );
+  text-align: center;
+  padding: 160px 20px;
+}
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 88px;
+}
+h2 {
+  font-family: var(--default-font);
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+h3 {
+  font-family: var(--default-font);
+  color: rgba(61, 59, 59, 0.635);
+}
+.check {
+  font-size: 28px;
+  font-weight: 500;
+  color: grey;
+}
+p {
+  font-family: var(--default-font) !important;
+  font-size: 20px;
+}
+.btn-branding {
+  font-family: var(--default-font);
+  background: rgb(37, 36, 36);
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+.btn-branding:hover {
+  border: 1px solid;
+  background: transparent;
+  color: white;
+}
+.project-description {
+  padding: 120px 60px;
+}
 
+.projects {
+  color: rgba(0, 0, 0, 0.743);
+}
+.btn-branding-outline {
+  font-family: var(--default-font);
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.743);
+  text-transform: uppercase;
+  line-height: 27px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.743);
+}
+.btn-branding-outline:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.354);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .hero {
+    padding: 60px 30px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+}
