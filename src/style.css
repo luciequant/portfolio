@@ -102,8 +102,10 @@ p {
   margin: 20px auto;
 }
 .skills {
-  margin-right: 30px;
+  margin-right: 50px;
   padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 .skills-section h1 {
   font-family: var(--default-font);
@@ -161,8 +163,19 @@ p {
   .about-section {
     text-align: center;
     padding: 0;
+    margin: 80px auto 0;
   }
   .skills {
     margin: 20px auto;
+    font-size: 20px;
+  }
+  .skills-section {
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    .skills {
+      margin: 20px auto;
+      font-size: 12px;
+    }
   }
 }
