@@ -74,11 +74,6 @@ p {
   color: white;
   background: rgba(0, 0, 0, 0.354);
 }
-.about-section {
-  padding: 0;
-  margin: 80px;
-}
-
 .about-section h1 {
   font-size: 64px;
   line-height: 80px;
@@ -97,13 +92,28 @@ p {
   background: white;
   color: black;
 }
+.about-section {
+  margin: 80px auto;
+}
 .about-section-content {
-  margin: 30px;
+  margin: 20px;
+}
+.about-section img {
+  margin: 20px auto;
+}
+.skills {
+  margin-right: 30px;
+  padding-top: 20px;
+}
+.skills-section h1 {
+  font-family: var(--default-font);
+  font-size: 64px;
+  line-height: 80px;
 }
 .work-section {
   text-align: center;
   padding: 0;
-  margin: 80px;
+  margin: 80px auto;
 }
 .work-section h1 {
   font-size: 64px;
@@ -118,7 +128,7 @@ p {
 }
 .contact-section {
   padding: 0;
-  margin: 80px;
+  margin: 80px auto;
   text-align: center;
 }
 .contact-section h1 {
@@ -126,6 +136,13 @@ p {
 }
 .contact-section a {
   color: pink;
+}
+.navbar-brand {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+.nav-link {
+  font-family: var(--default-font);
 }
 @media (max-width: 900px) {
   h1 {
@@ -144,5 +161,8 @@ p {
   .about-section {
     text-align: center;
     padding: 0;
+  }
+  .skills {
+    margin: 20px auto;
   }
 }
