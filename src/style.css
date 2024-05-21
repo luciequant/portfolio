@@ -103,7 +103,6 @@ p {
 }
 .skills {
   margin-right: 50px;
-  padding-top: 20px;
   text-align: center;
   font-size: 14px;
 }
@@ -135,9 +134,10 @@ p {
 }
 .contact-section h1 {
   font-family: var(--default-font);
+  font-size: 64px;
 }
 .contact-section a {
-  color: pink;
+  color: grey;
 }
 .navbar-brand {
   font-family: var(--heading-font);
@@ -145,6 +145,41 @@ p {
 }
 .nav-link {
   font-family: var(--default-font);
+}
+footer {
+  margin: 60px 0;
+  font-family: var(--default-font);
+}
+footer .work-box {
+  border: 1px solid;
+  border-radius: 6px;
+}
+footer h4 {
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .social-links {
+  color: white;
+  margin: 10px;
+  background: black;
+  padding: 10px 12px;
+  font-size: 20px;
+  border-radius: 500%;
+  transition: all 100ms ease-in-out;
+  border: 1px solid;
+}
+footer .social-links:hover {
+  color: black;
+  background: white;
+  border: 1px solid;
+}
+footer .github-link {
+  text-decoration: none;
+  color: black;
+}
+footer .github {
+  font-size: 14px;
 }
 @media (max-width: 900px) {
   h1 {
