@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "./components/LoadingScreen";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,8 +16,8 @@ function App() {
       <AnimatePresence>{isLoading && <LoadingScreen />}</AnimatePresence>
 
       {!isLoading && (
-        <main className="p-8 text-center">
-          <h1>Main App</h1>
+        <main className="p-8">
+          <Navbar />
         </main>
       )}
     </div>

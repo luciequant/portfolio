@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  background: #190b1f;
+  background: #0e0611;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
