@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div onClick={toggleNav} className="md:hidden z-50 text-violet-500">
+        <div onClick={toggleNav} className="md:hidden z-50 text-violet-700">
           {nav ? <IoClose size={30} /> : <IoMenu size={30} />}
         </div>
 
@@ -72,9 +72,9 @@ const Navbar = () => {
           initial={false}
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
-          className="fixed left-0 top-0 w-full min-h-screen bg-pink-600 z-40"
+          className="fixed left-0 top-0 w-full min-h-screen bg-pink-700 z-40"
         >
-          <ul className="font-semibold text-4xl space-y-8 mt-24 text-center text-gray-300">
+          <ul className="font-semibold text-4xl space-y-8 mt-24 text-center text-[#0e0611]">
             <li>
               <Link
                 to="/"
