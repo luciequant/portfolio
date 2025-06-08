@@ -38,7 +38,7 @@ const Navbar = () => {
         text-xl items-center px-12 h-20 font-roboto"
       >
         <a href="/" className="text-violet-600 font-bold text-3xl">
-          Lucie<span className="text-pink-600">Dev</span>
+          Lucie<span className="text-pink-500">Dev</span>
         </a>
 
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer pt-4 font-semibold">
@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div onClick={toggleNav} className="md:hidden z-50 text-violet-700">
+        <div onClick={toggleNav} className="md:hidden z-50 text-gray-400">
           {nav ? <IoClose size={30} /> : <IoMenu size={30} />}
         </div>
 
@@ -72,12 +72,12 @@ const Navbar = () => {
           initial={false}
           animate={nav ? "open" : "closed"}
           variants={menuVariants}
-          className="fixed left-0 top-0 w-full min-h-screen bg-pink-700 z-40"
+          className="fixed left-0 top-0 w-full min-h-screen bg-[#982C8C] z-40"
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center text-[#0e0611]">
             <li>
               <Link
-                to="/"
+                to="home"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}

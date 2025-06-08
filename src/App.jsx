@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
+import About from "./sections/About";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         <main className="p-8">
           <Navbar />
           <Home />
+          <About />
         </main>
       )}
     </div>

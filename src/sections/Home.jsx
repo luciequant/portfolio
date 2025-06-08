@@ -3,7 +3,7 @@ import profilepic from "../assets/profilepic.png";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-const Hero = () => {
+const Home = () => {
   return (
     <div className="mt-44 max-w-[1200px] mx-auto relative">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
@@ -22,7 +22,7 @@ const Hero = () => {
           >
             Hello, I am
           </motion.h3>
-          <h1 className="text-3xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-violet-700 to-pink-600 bg-clip-text text-transparent leading-right">
+          <h1 className="text-3xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-violet-700 to-pink-600 bg-clip-text text-transparent leading-right">
             Lucie Quantová
           </h1>
           <motion.p
@@ -82,4 +82,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
