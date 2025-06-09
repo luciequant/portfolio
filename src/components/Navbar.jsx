@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="hover:text-violet-500">
-            <Link to="about" smooth={true} offset={-30} duration={500}>
+            <Link to="about" smooth={true} offset={-60} duration={500}>
               About
             </Link>
           </li>
