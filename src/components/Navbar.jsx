@@ -42,7 +42,7 @@ const Navbar = () => {
         </a>
 
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer pt-4">
-          <li className="hover:text-violet-500">
+          <li className="hover:text-violet-500 ">
             <Link to="home" smooth={true} offset={-120} duration={500}>
               Home
             </Link>

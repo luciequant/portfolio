@@ -4,6 +4,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +23,7 @@ function App() {
           <Navbar />
           <Home />
           <About />
+          <Projects />
         </main>
       )}
     </div>
