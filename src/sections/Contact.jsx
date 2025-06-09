@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+import { MdDoneOutline } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [statusMessage, setStatusMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,11 +20,13 @@ const Contact = () => {
         e.target,
         import.meta.env.VITE_PUBLIC_KEY
       )
-      .then((result) => {
-        alert("Message Sent!");
+      .then(() => {
+        setStatusMessage("Message sent successfully! ✅ ");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => {
+        setStatusMessage("Oops! Something went wrong. Please try again. ❌");
+      });
   };
 
   return (
@@ -87,6 +91,9 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+        <p className="text-center text-xl mt-8 text-gray-300 font-bold">
+          {statusMessage}
+        </p>
       </div>
     </section>
   );
