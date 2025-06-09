@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="mt-44 max-w-[1200px] mx-auto relative">
-      <div className="grid md:grid-cols-2 place-items-center gap-8">
+    <div className="mt-44 max-w-[1200px] mx-auto relative" id="home">
+      <div className="grid md:grid-cols-2 place-items-center gap-8 ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex flex-row items-center gap-6 mt-6 md:mb-0"
+            className="flex flex-row items-center gap-6 mt-4 md:mb-0"
           >
             <motion.button
               whileHover={{

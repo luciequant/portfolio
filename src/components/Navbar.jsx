@@ -41,14 +41,14 @@ const Navbar = () => {
           Lucie<span className="text-pink-500">Dev</span>
         </a>
 
-        <ul className="hidden md:flex gap-12 z-10 cursor-pointer pt-4 font-semibold">
+        <ul className="hidden md:flex gap-12 z-10 cursor-pointer pt-4">
           <li className="hover:text-violet-500">
-            <Link to="/" smooth={true} offset={50} duration={500}>
+            <Link to="home" smooth={true} offset={-120} duration={500}>
               Home
             </Link>
           </li>
           <li className="hover:text-violet-500">
-            <Link to="about" smooth={true} offset={50} duration={500}>
+            <Link to="about" smooth={true} offset={-30} duration={500}>
               About
             </Link>
           </li>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 to="home"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-80}
                 duration={500}
               >
                 Home
