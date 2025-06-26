@@ -1,15 +1,22 @@
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 const projects = [
   {
     img: project1,
+    title: "E-commerce Project",
+    description: "Built with Next.js, Tailwind CSS and Stripe",
+    link: `https://ecommerce-nextjs-xi-vert.vercel.app/`,
+  },
+  {
+    img: project2,
     title: "Travel Project",
     description: "Built with HTML, CSS and Bootstrap",
     link: `https://travelprague.netlify.app/`,
   },
   {
-    img: project2,
+    img: project3,
     title: "AI Quote Generator",
     description: "Built with HTML, CSS, JavaScript and AI API",
     link: `https://aiquotegeneratorlq.netlify.app/`,
