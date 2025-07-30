@@ -18,11 +18,11 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="text-4xl mb-4 text-gray-400"
+            className="text-3xl mb-4 text-gray-400"
           >
             Hello, I am
           </motion.h3>
-          <h1 className="text-3xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-violet-700 to-pink-600 bg-clip-text text-transparent leading-right">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-violet-700 to-pink-600 bg-clip-text text-transparent leading-right">
             Lucie Quantová
           </h1>
           <motion.p
@@ -50,7 +50,7 @@ const Home = () => {
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
-              className="z-10 cursor-pointer font-bold text-gray-300 md:w-auto p-4 border border-purple-400 rounded-xl hover:bg-blue-800/10"
+              className="z-10 cursor-pointer font-bold text-gray-300 md:w-auto p-4 mt-4 border border-purple-400 rounded-xl hover:bg-blue-800/10"
             >
               <Link to="projects" smooth={true} offset={50} duration={500}>
                 View Projects
@@ -61,7 +61,7 @@ const Home = () => {
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
-              className="z-10 cursor-pointer font-bold text-gray-300 md:w-auto p-4 border border-pink-400 rounded-xl  hover:bg-pink-800/10"
+              className="z-10 cursor-pointer font-bold text-gray-300 md:w-auto p-4  mt-4 border border-pink-400 rounded-xl  hover:bg-pink-800/10"
             >
               <Link to="contact" smooth={true} offset={50} duration={500}>
                 Contact Me
